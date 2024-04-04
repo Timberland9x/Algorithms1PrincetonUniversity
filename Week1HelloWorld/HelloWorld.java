@@ -1,3 +1,4 @@
+package Week1HelloWorld;
 /******************************************************************************
  *  Compilation:  javac HelloWorld.java
  *  Execution:    java HelloWorld

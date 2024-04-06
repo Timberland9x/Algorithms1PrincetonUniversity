@@ -5,26 +5,26 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
 	// creates n-by-n grid, with all sites initially blocked
+	boolean[][] grid;
+
 	public Percolation(int n) {
-		// WeightedQuickUnionUF wQUUF = new WeightedQuickUnionUF(n);
-		// System.out.println("This is the count: " + wQUUF.count());
-		int[][] grid = new int[n][n];
-		int count = 0;
+		boolean[][] grid = new boolean[0][0];
 		for (int row = 0; row < n; row++) {
 			for (int col = 0; col < n; col++) {
-				grid[row][col] = count;
-				count++;
+				grid[row][col] = false;
 			}
 		}
 	}
 
 	// opens the site (row, col) if it is not open already
 	public void open(int row, int col) {
+		grid[row][col] = true;
 	}
 
 	// is the site (row, col) open?
 	public boolean isOpen(int row, int col) {
-
+		if(grid[row][col] == true)
+			return true;
 		return true;
 	}
 

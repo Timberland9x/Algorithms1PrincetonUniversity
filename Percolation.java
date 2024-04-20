@@ -23,7 +23,7 @@ public class Percolation {
 		grid[row][col] = true;
 		// 4 if statements to union all 4 sides
 		if (g.connected(row + 1, col) != true) {
-			g.union(row + 1, col);
+			g.union(row + 1, col); // change whats in union call (row * col.length() + col)
 		}
 	}
 

@@ -1,5 +1,7 @@
+package dp;
+
 public class Unionfind {
-	int root[];
+	static int root[];
 	int index[];
 
 	public void uf(int n) {
@@ -15,7 +17,8 @@ public class Unionfind {
 		}
 	}
 
-	public int find(int p) {
+	public static int find(int p) {
+		System.out.println("\nfind is running!\n");
 		if (root[p] != p) {
 			root[p] = find(root[p]); // path compression: set parent to the root
 		}
@@ -26,7 +29,4 @@ public class Unionfind {
 
 	}
 
-
 }
-
-

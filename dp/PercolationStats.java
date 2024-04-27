@@ -1,4 +1,4 @@
-package Week1Percolation;
+package dp;
 
 public class PercolationStats {
     
